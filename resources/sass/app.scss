@@ -3,6 +3,15 @@
 
 // Variables
 @import 'variables';
+@import 'normalize';
+@import 'helpers';
+@import 'layout';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Components
+@import './components/nav';
+@import './components/panel';
+@import './components/card';
+@import './components/form';
+@import './components/button';
+@import './components/grid';
+
