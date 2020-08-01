@@ -8,6 +8,25 @@
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
+                <x-input-component 
+                    label="Email"
+                    name="email"
+                    value=""
+                ></x-input-component>
+
+                <x-input-component 
+                    label="Clave"
+                    name="password"
+                    value=""
+                    type="password"
+                ></x-input-component>
+
+                <x-checkbox-component
+                    label="Recuérdame"
+                    name="remember"
+                    value="yes"
+                ></x-checkbox-component>
+
                 <div class="Grid Grid-2-col-small-and-up Grid-align-items-center">
                     <div>
                         <button class="Button" type="submit">

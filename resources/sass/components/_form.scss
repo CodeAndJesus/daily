@@ -6,11 +6,12 @@
       font-size: 1em;
       display: block;
       margin-bottom: 2px;
-      color: $text-light-color;
+      color: $secondary-color;
     }
 
     label.Form-checkbox {
       display: inline;
+      padding-bottom: 2rem;
     }
 
     input, textarea {
@@ -19,6 +20,11 @@
       border-radius: 6px;
       padding: 10px;
       font-size: 0.9em;
+    }
+
+    input:focus {
+      color: $secondary-light-color;
+      outline-color: $secondary-color;
     }
 
     input.Form-checkbox {

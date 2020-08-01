@@ -27,7 +27,7 @@
 </main>
 
 <footer>
-    Arturo Castro - 2020
+    <p>Arturo Castro - 2020 </p>
 </footer>
 
 </body>
