@@ -5,6 +5,7 @@
     <div class="Panel">
         <h1>Login de usuarios</h1>
         <div class="Card Card-login">
+
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 

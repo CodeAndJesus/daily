@@ -30,5 +30,6 @@
     <p>Arturo Castro - 2020 </p>
 </footer>
 
+    @include('common.feedback-element')
 </body>
 </html>
