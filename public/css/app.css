@@ -401,16 +401,16 @@ template {
 }
 
 .big-icon {
-  --eit-icon-size: 96px;
-  --eit-icon-color: rgb(221, 30, 164);
+  --art-icon-size: 96px;
+  --art-icon-color: rgb(161, 5, 26);
 }
 
 .box-center {
-  --eit-info-box-align: center;
-  --eit-info-box-background-color: rgb(160, 27, 27);
-  --eit-info-box-color: #fff;
-  --eit-info-box-icon-color: #fff;
-  --eit-info-box-close-icon-color: #ffc;
+  --art-info-box-align: center;
+  --art-info-box-background-color: rgb(160, 27, 27);
+  --art-info-box-color: #fff;
+  --art-info-box-icon-color: #fff;
+  --art-info-box-close-icon-color: #ffc;
 }
 
 * {

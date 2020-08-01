@@ -10,7 +10,7 @@
 
 <art-box-info  message="Este es otro mensaje"></art-box-info>
 
-
+<art-icon icon="favorite_black" class="big-icon"></art-icon>
 
 
 @endsection
