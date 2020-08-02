@@ -5957,10 +5957,12 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_art_box_info__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/art-box-info */ "./resources/js/components/art-box-info.js");
-/* harmony import */ var _components_art_input_checkbox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/art-input-checkbox */ "./resources/js/components/art-input-checkbox.js");
+/* harmony import */ var _components_forms_art_input_checkbox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/forms/art-input-checkbox */ "./resources/js/components/forms/art-input-checkbox.js");
 /* harmony import */ var _components_art_feedback__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/art-feedback */ "./resources/js/components/art-feedback.js");
 /* harmony import */ var _components_icons_art_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/icons/art-icon */ "./resources/js/components/icons/art-icon.js");
 /* harmony import */ var _components_art_info_box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/art-info-box */ "./resources/js/components/art-info-box.js");
+/* harmony import */ var _components_forms_art_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/forms/art-button */ "./resources/js/components/forms/art-button.js");
+
 
 
 
@@ -6319,10 +6321,137 @@ customElements.define('art-info-box', ArtInfoBox);
 
 /***/ }),
 
-/***/ "./resources/js/components/art-input-checkbox.js":
-/*!*******************************************************!*\
-  !*** ./resources/js/components/art-input-checkbox.js ***!
-  \*******************************************************/
+/***/ "./resources/js/components/forms/art-button.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/forms/art-button.js ***!
+  \*****************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var lit_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lit-element */ "./node_modules/lit-element/lit-element.js");
+/* harmony import */ var _icons_art_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../icons/art-icon */ "./resources/js/components/icons/art-icon.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n                  <art-icon icon=\"", "\"></art-icon>\n                "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n          <button class=\"", "\" @click=", ">\n            ", "\n            <slot></slot>\n          </button>\n        "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n          :host {\n            display: inline-block;\n            --art-icon-size: var(--art-button-icon-size, 1.2em);\n            --art-icon-color: var(--art-button-icon-color, #fff);\n          }\n          art-icon {\n            position: relative;\n            top: 3px;\n            margin-right: 4px;\n          }\n          button {\n            cursor: pointer;\n            display: inline-block;\n            text-transform: uppercase;\n            border-radius: var(--art-button-border-radius, 4px);\n            padding-top: var(--art-button-padding-y, 7px);\n            padding-bottom: var(--art-button-padding-y, 7px);\n            padding-left: var(--art-button-padding-x, 10px);\n            padding-right: var(--art-button-padding-x, 10px);\n            transition: all 0.2s ease-in;\n            -webkit-transition: all 0.2s ease-in;\n            background-color: var(--art-button-background-color, var(--secondary-color));\n            color: var(--art-button-text-color, #fff);\n            font-size: var(--art-button-font-size, 0.9em);\n            border: var(--art-button-border, none);\n            line-height: 1.5em;\n          }\n          button:hover {\n            background-color: var(--art-button-hover-background-color, var(--secondary-light-color));\n            color: var(--art-button-hover-text-color, #ffff);\n            --art-icon-color: var(--art-button-hover-text-color);\n          }\n          button.disabled:hover {\n            background-color: var(--art-button-background-color, #303030);\n            color: var(--art-button-text-color, #fff);\n            --art-icon-color: var(--art-button-hover-text-color);\n          }\n          .disabled {\n            opacity: 0.5;\n          }\n        "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var ArtButton = /*#__PURE__*/function (_LitElement) {
+  _inherits(ArtButton, _LitElement);
+
+  var _super = _createSuper(ArtButton);
+
+  _createClass(ArtButton, null, [{
+    key: "styles",
+    get: function get() {
+      return Object(lit_element__WEBPACK_IMPORTED_MODULE_0__["css"])(_templateObject());
+    }
+  }, {
+    key: "properties",
+    get: function get() {
+      return {
+        icon: {
+          type: String
+        },
+        disabled: {
+          type: Boolean
+        }
+      };
+    }
+  }]);
+
+  function ArtButton() {
+    var _this;
+
+    _classCallCheck(this, ArtButton);
+
+    _this = _super.call(this);
+    _this.icon = "";
+    return _this;
+  }
+
+  _createClass(ArtButton, [{
+    key: "render",
+    value: function render() {
+      return Object(lit_element__WEBPACK_IMPORTED_MODULE_0__["html"])(_templateObject2(), this.disabled ? "disabled" : "", this.doClick, this.icon ? Object(lit_element__WEBPACK_IMPORTED_MODULE_0__["html"])(_templateObject3(), this.icon) : "");
+    }
+  }, {
+    key: "doClick",
+    value: function doClick(e) {
+      if (this.disabled) {
+        e.stopPropagation();
+        this.dispatchEvent(new CustomEvent("art-button-clicked-but-disabled", {
+          bubbles: true,
+          composed: true
+        }));
+      }
+    }
+  }]);
+
+  return ArtButton;
+}(lit_element__WEBPACK_IMPORTED_MODULE_0__["LitElement"]);
+
+customElements.define('art-button', ArtButton);
+
+/***/ }),
+
+/***/ "./resources/js/components/forms/art-input-checkbox.js":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/forms/art-input-checkbox.js ***!
+  \*************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
