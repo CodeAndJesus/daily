@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-
-<h3>Bienvenido a la vista</h3>
-
-                   
+        <br>
+        @if (session('success'))
+            <art-info-box showCloseButton>
+                {{ session('success') }}
+            </art-info-box>
+            <br>
+        @endif                   
 @endsection

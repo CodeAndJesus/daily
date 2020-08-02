@@ -21,6 +21,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+        "@dile/dile-slide-down-mixin": "^1.0.1",
         "@dile/dile-toast": "^1.0.0",
         "dile-checkbox": "^2.0.2",
         "lit-element": "^2.3.1"
