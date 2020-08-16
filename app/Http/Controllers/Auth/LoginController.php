@@ -37,4 +37,16 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+
+    protected function authenticated(Request $request, $user)
+    {
+        dd('llegaste aqui');
+        if($request->ajax()) {
+            return json_encode([
+                'user' => $user,
+                'token' => csrf_token()
+            ]);
+        }
+    }
 }

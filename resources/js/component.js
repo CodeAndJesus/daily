@@ -4,3 +4,6 @@ import './components/art-feedback';
 import './components/icons/art-icon';
 import './components/art-info-box';
 import './components/forms/art-button';
+import './components/users/art-user-control';
+import './components/users/art-login-modal';
+import './components/users/art-user-menu';

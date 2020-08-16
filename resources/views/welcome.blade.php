@@ -13,5 +13,4 @@
 <art-icon icon="favorite_black" class="big-icon"></art-icon> -->
 <br>
 
-<art-button  icon="favorite_black">Favorito</art-button>
 @endsection
